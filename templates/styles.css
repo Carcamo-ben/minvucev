@@ -1,8 +1,12 @@
 body {
-  background-color: powderblue;
+  background-color: black;
 }
 h1 {
-  color: blue;
+  color: white;
+}
+
+h3 {
+  color: white;
 }
 p {
   color: red;
