@@ -8,6 +8,14 @@ h1 {
 h3 {
   color: white;
 }
-p {
-  color: red;
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
