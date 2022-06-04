@@ -1,5 +1,5 @@
-from flask import Flask, render_template
-app = Flask(__name__,template_folder='templates',static_folder='templates')
+from flask import Flask, render_template, url_for
+app = Flask(__name__,template_folder='templates')
 
 @app.route("/")
 def index():
