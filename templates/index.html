@@ -1,9 +1,28 @@
-<html>
-   <body>
-<form action="{{ url_for('handle_form') }}" enctype="multipart/form-data" method="POST"> 
-    <input type="text" name="comuna">
-    <input type="password" name="latitud">
-         <p><input type = "submit" value = "submit" /></p>
-      </form>   
-   </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+
+    <form action="" method="post">
+        <p>
+            <label for="username">Username</label>
+            <input type="text" name="username">
+        </p>
+        <p>
+            <label for="password">Password</label>
+            <input type="password" name="password">
+        </p>
+        <p>
+            <input type="submit">
+        </p>
+    </form>
+
+</body>
 </html>
