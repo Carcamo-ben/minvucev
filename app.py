@@ -5,6 +5,7 @@ app = Flask(__name__,template_folder='templates')
 @app.route('/', methods=['post', 'get'])
 def index():
     message = ''
+    res = ''
     if request.method == 'POST':
         username = request.form.get('comuna')  # access the data inside 
         password = request.form.get('latitud')
