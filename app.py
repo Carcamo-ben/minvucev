@@ -10,8 +10,9 @@ def recetas():
     return render_template("recetas.html")
 
 @app.route('/handle_form>', methods = ['GET', 'POST', 'DELETE'])
-def handle_form:
+def handle_form():
     data= request.form
     print (data['comuna'])
     print (data['latitud'])
+    request.post("https://prod-25.eastus.logic.azure.com:443/workflows/82bb213964e7477e97c1b949fe51544f/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=bDydfFCFFrBmgCF1qHpjCGIMVoKI_5CcmCSV1n2v5kw",data))
     return data
